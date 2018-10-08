@@ -1,12 +1,14 @@
 module.exports = {
     "env": {
-        "node": true
+        "node": true,
+        "jest": true
     },
     "extends": "eslint:recommended",
     "parserOptions": {
         "ecmaVersion": 6
     },
     "rules": {
+        "no-console": "off",
         "indent": [
             "error",
             "tab"
