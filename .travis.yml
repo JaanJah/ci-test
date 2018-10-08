@@ -1,0 +1,22 @@
+stages:
+    - install
+    - build
+    - test
+    - deploy
+
+
+job 1:
+  stage: install
+  script: npm install
+
+job 2:
+  stage: build
+  script: ./build
+
+job 3:
+  stage: test
+  script: npm run lint
+
+job 4:
+  stage: deploy
+  script: ./deploy
